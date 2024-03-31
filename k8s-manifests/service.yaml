@@ -7,8 +7,8 @@ spec:
   type: NodePort
   ports:
     - protocol: TCP
-      port:
-      targetPort:
-      nodePort:
+      port: 80
+      targetPort: 9292
+      nodePort: 31400
   selector:
     app: devdocs

@@ -17,5 +17,5 @@ spec:
         - name: devdocs
           image: pgnomme/devdocs:latest
           ports:
-            - containerPort:
+            - containerPort: 9292
 
