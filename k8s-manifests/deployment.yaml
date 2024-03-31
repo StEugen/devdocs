@@ -1,0 +1,21 @@
+apiVerstion: v1
+kind: Deployment
+metadata:
+  name: devdocs
+  namespace: devdocs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devdocs
+  template:
+    metadata:
+      labels:
+        app: devdocs
+    spec:
+      containers:
+        - name: devdocs
+          image: pgnomme/devdocs:latest
+          ports:
+            - containerPort:
+
